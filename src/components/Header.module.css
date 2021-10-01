@@ -1,0 +1,20 @@
+
+
+
+.container {
+    background-color: #00194c;
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+
+    
+    
+
+}
+
+

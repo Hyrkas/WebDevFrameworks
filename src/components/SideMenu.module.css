@@ -1,0 +1,36 @@
+.background {
+
+    height: 1000px;
+    background-color: rgb(248, 248, 248);
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1mm;
+    
+    
+   
+    
+    
+    
+}
+p {
+    margin-left: 2mm;
+    font-weight: bold;
+    font-size: 90%
+    
+}
+
+span {
+    font-size: 80%;
+    font-weight: lighter;
+    color: black;
+
+
+}
+
+h2 {
+    margin-left: 2mm;
+    font-family:sans-serif;
+    margin-top: 7mm;
+    margin-left: 16mm;
+}
