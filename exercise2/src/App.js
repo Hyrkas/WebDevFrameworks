@@ -15,7 +15,7 @@ class App extends React.Component {
 
     
     this.state = {
-      items: [
+      foods: [
         { id: 1, value: 'Milk', qty: 5, unit: 'ltr' },
         { id: 2, value: 'Bananas', qty: 6, unit: 'pcs' },
         { id: 3, value: 'Bread', qty: 3, unit: 'x' },
@@ -33,10 +33,44 @@ class App extends React.Component {
         applicationDescription={ applicationDescription }
         applicationName={ applicationName }
       />
-      <ShoppingList items={ this.state.items } />
-      <button type="button" onClick={() => this.setState({items: [...this.state.items,{ id: 1, value: 'Milk', qty: 4, unit: 'ltr'}]})}>Add 4 Milk</button>
-      <button type="button" onClick={() => this.setState({items: [...this.state.items,{ id: 2, value: 'Bread', qty: 3, unit: 'x'}]})}>Add 3 Bread</button>
-      <button type="button" onClick={() => this.setState({items: [...this.state.items,{ id: 4, value: 'Eggs', qty: 8, unit: 'x'}]})}>Add 8 Eggs</button>
+      <ShoppingList items={ this.state.foods } />
+      <button type="button" 
+              onClick={
+                () => this.setState(
+                  {
+                    foods: [...this.state.foods,{ id: 5, value: 'Cat Food', qty: 4, unit: 'x'}]
+                    }
+                    )
+                    }>
+                    Add 4 Cat Food
+      </button>
+      <button type="button" 
+              onClick={
+                () => this.setState(
+                {
+                  foods: [...this.state.foods,{ id: 6, value: 'Dog Food', qty: 3, unit: 'x'}]
+                  }
+                  )
+                  }>Add 3 Dog Food
+      </button>
+      <button type="button"
+              onClick={
+                () => this.setState(
+                  {
+                    foods: [...this.state.foods,{ id: 7, value: 'Cigarettes', qty: 8, unit: 'x'}]
+                    }
+                    )
+                    }>Add 8 Cigarettes
+      </button>
+      <button type="button"
+               onClick={
+                 () => this.setState(
+                   {
+                     foods: [...this.state.foods,{ id: 8, value: 'Beer', qty: 8, unit: 'x'}]
+                     }
+                     )
+                     }>Add 8 Beers
+      </button>
       
     </div>
   }
